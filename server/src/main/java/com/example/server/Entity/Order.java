@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.sql.Date;
 
 @Getter
 @Setter
@@ -23,19 +24,19 @@ public class Order
     @Column(length = 400)
     private String description;
 
-//    @ManyToMany
-//    @JoinTable(
-//            name = "user_order",
-//            joinColumns = @JoinColumn(
-//                    name = "order_id",
-//                    referencedColumnName = "id"
-//            ),
-//            inverseJoinColumns = @JoinColumn(
-//                    name = "user_id",
-//                    referencedColumnName = "id"
-//            )
-//    )
-//    private List<User> user;
+   @ManyToMany
+   @JoinTable(
+           name = "user_order",
+           joinColumns = @JoinColumn(
+                   name = "order_id",
+                   referencedColumnName = "id"
+           ),
+           inverseJoinColumns = @JoinColumn(
+                   name = "user_id",
+                   referencedColumnName = "id"
+           )
+   )
+   private List<User> user;
 
     @ManyToOne
     @JoinColumn(name = "email_address",referencedColumnName = "emailAddress")
@@ -47,4 +48,11 @@ public class Order
 
     @NonNull
     private String status;
+    
+    @NonNull
+    private Date created;
+
+    @NonNull
+    private Date lastChanged;
+
 }

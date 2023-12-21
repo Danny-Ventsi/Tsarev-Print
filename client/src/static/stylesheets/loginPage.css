@@ -1,0 +1,99 @@
+.login
+{
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    position: relative;
+    top: 35vh;
+    color: #FDCA00;
+    text-align: center;
+    z-index: -1;
+    filter: drop-shadow(0 0 0.25rem #1c1c1c);
+    border:2px solid #FDCA00;
+}
+#login
+{
+    display: flex;
+    justify-content: center;
+}
+a
+{
+    color: #fee402;
+    text-decoration: none;
+}
+
+a:hover
+{
+    cursor: pointer;
+    color: #fffed5
+}
+
+.login-button-page
+{
+  position: relative;
+  transition: all 0.5s;
+  top: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.login-button-page span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.login-button-page span:after
+{
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.login-button-page:hover span:after
+{
+    opacity: 1;
+    right: 0;
+}
+
+.login-button-page:hover span 
+{
+  padding-right: 10px;
+}
+
+
+@media screen and (max-width: 720px)
+{
+    .login
+    {
+        left: 33vw;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .login
+    {
+        left: 0vw;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .login
+    {
+        left: 11vw;
+    }
+}
+
+@media screen and (max-width: 280px)
+{
+    .login
+    {
+        left: 1vw;
+    }
+}

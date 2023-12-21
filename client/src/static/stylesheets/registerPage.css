@@ -1,0 +1,64 @@
+#register-page
+{
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #FDCA00;
+    position: absolute;
+    top: 33%;
+    text-align: center;
+    filter: drop-shadow(0 0 0.25rem #1c1c1c);
+    border:2px solid #FDCA00;
+    width: 20vw;
+}
+
+#register
+{
+    display: flex;
+    justify-content: center;
+}
+
+#confirmPass
+{
+    position:relative;
+    left:-30px
+}
+
+.register-elements
+{
+    margin-top: 12px;
+}
+
+button
+{
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 1280px)
+{
+    #register-page
+    {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    #register-page
+    {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 280px)
+{
+    #register-page
+    {
+        font-size: 12px;
+        width: 80vw;
+    }
+    #confirmPass
+    {
+        left: -23px;
+    }
+}

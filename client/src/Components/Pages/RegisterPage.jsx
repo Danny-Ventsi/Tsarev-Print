@@ -2,6 +2,7 @@ import "../../static/stylesheets/register-page.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useBetween } from "use-between";
 import { useState } from "react";
+import "../../static/stylesheets/styles.css";
 
 export const useSharedRegister = () => {
   const [emailField, setEmailField] = useState("");

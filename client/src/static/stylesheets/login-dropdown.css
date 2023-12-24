@@ -1,0 +1,98 @@
+.triangle-down 
+{
+  top: -7.6%;
+  right: 2.3%;
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 16px solid #FDCA00;
+}
+
+#username-field
+{
+  position: relative;
+  left: 5.4%;
+}
+
+#email-field
+{
+  position: relative;
+  left: 0.8%;
+}
+
+#password-field
+{
+    position: relative;
+    left: 5.6%;
+}
+
+
+.under-text
+{
+    font-size: 10px;
+}
+
+.login-button
+{
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.login-hover:hover > .dropdown
+{
+  visibility: visible;
+}
+
+.login-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.login-button span:after
+{
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.login-button:hover span:after
+{
+    opacity: 1;
+    right: 0;
+}
+
+.login-button:hover span 
+{
+  padding-right: 10px;
+}
+
+.cart-dropdown-content
+{
+    text-align: center;
+    position: relative;
+}
+
+#register-click
+{
+    color: #fee402;
+    text-decoration: none;
+}
+
+#register-click:hover
+{
+    color: #fffed5
+}
+
+@media screen and (max-width: 720px)
+{
+  .login-hover:hover > .dropdown
+  {
+    visibility: hidden;
+  } 
+}

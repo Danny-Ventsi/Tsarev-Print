@@ -1,0 +1,305 @@
+.footer
+{
+    filter: drop-shadow(0 0 0.25rem #1c1c1c);
+    border-radius:12px;
+    top:87%;
+    width: 77.5vw;
+    margin-left: 11.5vw;
+    border: 2px solid #FDCA00;
+    background-color: #1c1c1c;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inline
+{
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    color: #FDCA00;
+}
+
+#services
+{
+    margin-left: 95px;
+}
+
+#contactUs
+{
+    margin-left: 90px;
+}
+
+p
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 18px;
+    color:#FDCA00;
+}
+
+.svg
+{
+    margin-top: -5px;
+    margin-left: 7px;
+    fill: #FDCA00;
+}
+
+.footer h2 {
+    margin-top: 2vh;
+}
+
+#fb
+{
+    height: 25px;
+    margin-top: 0px;
+    margin-left: 41px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+#tt
+{
+    height: 25px;
+    margin-top: 0px;
+    margin-left: 71px;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .footer
+    {
+       width: 77vw;
+    }
+    #socialMedia
+    {
+        margin-right: 120px;
+    }
+
+    #socialMedia h2
+    {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 1050px)
+{
+    .footer
+    {
+       width: 82vw;
+    }
+}
+
+@media screen and (max-width: 980px)
+{
+    .footer
+    {
+       width: 88vw;
+       margin-left: 5.5vw;
+    }
+}
+
+
+@media screen and (max-width: 920px)
+{
+    .footer
+    {
+       width: 95vw;
+       margin-left: 2vw;
+    }
+}
+
+@media screen and (max-width: 855px)
+{
+    .footer
+    {
+       width: 96vw;
+       margin-left: -0.5vw;
+    }
+    .inline
+    {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .footer
+    {
+       width: 96vw;
+       margin-left: 0.7vw;
+    }
+    .inline
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .footer
+    {
+       width: 96vw;
+    }
+    .inline
+    {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+@media screen and (max-width: 660px)
+{
+    .footer
+    {
+       width: 96vw;
+       margin-left: 0.5vw;
+    }
+    .inline
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 590px)
+{
+    .footer
+    {
+       width: 96vw;
+       margin-left: 0.3vw;
+    }
+    .inline
+    {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 540px)
+{
+    .footer
+    {
+       width: 96vw;
+       margin-left: -0.5vw;
+    }
+    .inline
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .footer
+    {
+       width: 80vw;
+       margin-left: 9vw;
+       display: flex;
+       flex-direction: column;
+    }
+    .inline
+    {
+        margin-right: 90px;
+    }
+    #socialMedia
+    {
+        margin-right: 30px;
+    }
+
+    #socialMedia h2
+    {
+        margin-left: 25px;
+    }
+
+    .svg
+    {
+        margin-left: 5.5vw;
+    }
+
+    #fb
+    {
+        margin-left: 13vw;
+    }
+
+    #tt
+    {
+        margin-left: 20vw;
+    }
+
+    #orders
+    {
+        margin-left: 92px;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+    .footer
+    {
+        margin-left: 8vw;
+    }
+    .svg
+    {
+        margin-left: 7.5vw;
+    }
+
+    #fb
+    {
+        margin-left: 16vw;
+    }
+
+    #tt
+    {
+        margin-left: 23.7vw;
+    }
+
+}
+
+@media screen and (max-width: 360px)
+{
+    .svg
+    {
+        margin-left: 9vw;
+    }
+
+    #fb
+    {
+        margin-left: 17.5vw;
+    }
+
+    #tt
+    {
+        margin-left: 25vw;
+    }
+
+}
+
+@media screen and (max-width: 280px)
+{
+    .svg
+    {
+        margin-left: 12vw;
+    }
+
+    #fb
+    {
+        margin-left: 22.5vw;
+    }
+
+    #tt
+    {
+        margin-left: 32vw;
+    }
+
+}

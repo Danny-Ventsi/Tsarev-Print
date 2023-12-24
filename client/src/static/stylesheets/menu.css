@@ -1,0 +1,55 @@
+.overlay
+{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.6);
+    overflow-x: hidden ;
+    transition: 0.5s;
+}
+
+.overlay-content
+{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a
+{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #FDCA00;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus
+{
+    color: #fffed5;
+}
+  
+.overlay .closeButton
+{
+    position: absolute;
+    top: 0px;
+    left: 73px;
+    font-size: 45px;
+}
+#menu
+{
+    position: absolute;
+    top: 22%;
+    left: 80px;
+    font-size: 35px;
+    color: #FDCA00;;
+}
+#menu:hover
+{
+    cursor:pointer;
+    color: #fffed5;
+}

@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./Components/Navigation/Navbar";
+import { useState } from "react";
+import { useBetween } from "use-between";
 
-function App() {
+export const useSharableState = () => {
+  const [cartItems, setCartItems] = useState([]);
+  const [price, setPrice] = useState(0);
+  const [numOfItemsInCart, setNumOfItemsInCart] = useState("");
+  const [reload, setReload] = useState(0);
+  return {
+    price,
+    setPrice,
+    numOfItemsInCart,
+    setNumOfItemsInCart,
+    setCartItems,
+    cartItems,
+    reload,
+    setReload,
+  };
+};
+
+const App = () => {
+  const {
+    reload,
+    setReload,
+    setCartItems,
+    cartItems,
+    price,
+    setPrice,
+    setNumOfItemsInCart,
+    numOfItemsInCart,
+  } = useBetween(useSharableState);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar
+        setNumOfItemsInCart={setNumOfItemsInCart}
+        numOfItemsInCart={numOfItemsInCart}
+        setPrice={setPrice}
+        price={price}
+        cartItems={cartItems}
+      />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,25 @@
+.dropdown-content
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height:250px;
+    text-align: center;
+    position: relative;
+}
+
+.dropdown
+{
+    color: #FDCA00;
+    top: 11px;
+    width: 300px;
+    height: auto;
+    background-color: #1c1c1c;
+    border: 2px solid #FDCA00;
+    position: absolute;
+    top:100%;
+    right:0%;
+    border-radius: 8px;
+    visibility: hidden;
+    transition: visibility 0.1s;
+    z-index: 1;
+}

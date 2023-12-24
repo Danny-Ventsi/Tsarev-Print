@@ -1,0 +1,48 @@
+.bag-triangle-down 
+{
+    margin-top: -5.3%;
+    margin-left:58.3%;
+    position: sticky;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 16px solid #FDCA00;
+}
+
+.bag-triangle-down-logged
+{
+    margin-top: -5.3%;
+    margin-left:52.3%;
+    position: sticky;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 16px solid #FDCA00;
+}
+
+
+.bag-hover:hover > .dropdown
+{
+    visibility: visible;
+}
+
+.content-rest
+{
+    text-align: center;
+    position: relative;
+}
+
+.cartbutton
+{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 720px)
+{
+  .bag-hover:hover > .dropdown
+  {
+    visibility: hidden;
+  } 
+}

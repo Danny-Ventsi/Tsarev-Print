@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+#content
+{
+    z-index: -1;
+    position: relative;
+    display: inline-flex;
+    border-radius: 12px;
+    background-color: #1c1c1c;
+    color: #FDCA00;
+    margin-top: 70px;
+    margin-left: 15px;
+
+}
+
+button
+{
+    padding: 6px;
+    background-color: #FDCA00;
+    border: 1px solid #FDCA00;
+    border-radius: 4px;
+    color: black;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: #fffed5;
+    border: 1px solid #fffed5;
+}
+
+#search
+{
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 3.5%;
+    left: 45%;
+    z-index: 2;
+}
+
 .dropdown-content
 {
     overflow-x: hidden;

@@ -7,7 +7,7 @@ const DropdownLogin = () => {
   return (
     <div className="dropdown">
       <div className="triangle-down"></div>
-      <div className="cart-dropdown-content">
+      <div className="bag-dropdown-content">
         <LoginForm />
         <RegisterForm />
       </div>

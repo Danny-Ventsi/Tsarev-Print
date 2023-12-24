@@ -1,0 +1,40 @@
+.svg
+{
+    fill:#FDCA00; 
+    height: 35px;
+    width:35px;
+    position: absolute;
+}
+
+.bag
+{   
+    top: 18px; 
+    right: 90px;
+}
+
+.account
+{
+    top: 20px;
+    right: 10px;
+}
+
+.wishlist
+{
+    top: 20px;
+    right: 48px;
+}
+
+.svg:hover
+{
+    cursor: pointer;
+    fill:#fffed5; 
+}
+
+@media screen and (max-width: 720px)
+{
+    .svg:hover
+    {
+        cursor: pointer;
+        fill:#FDCA00; 
+    }
+}

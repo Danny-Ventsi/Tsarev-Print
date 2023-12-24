@@ -1,7 +1,7 @@
 import {Routes, Route, Navigate} from "react-router-dom"
-// import HomePage from "../Pages/HomePage"
-import LoginPage from "../Pages/LoginPage"
-import RegisterPage from "../Pages/RegisterPage"
+import HomePage from "../Pages/HomePage";
+import LoginPage from "../Pages/LoginPage";
+import RegisterPage from "../Pages/RegisterPage";
 // import OrderStatusPage from "../Pages/OrderStatusPage"
 // import CreateItemsPage from "../Pages/CreateItemsPage"
 // import UpdateItemsPage from "../Pages/UpdateItemsPage"
@@ -18,7 +18,7 @@ import RegisterPage from "../Pages/RegisterPage"
 const PageRoutes = (props) => {
   return (
     <Routes>
-      {/* <Route exact path="/" element={<HomePage />} /> */}
+      <Route exact path="/" element={<HomePage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       {/* <Route path="/order-status" element={<OrderStatusPage />} /> */}

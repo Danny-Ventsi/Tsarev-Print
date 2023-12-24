@@ -3,17 +3,17 @@ import { useState } from "react";
 import { useBetween } from "use-between";
 
 export const useSharableState = () => {
-  const [cartItems, setCartItems] = useState([]);
+  const [bagItems, setBagItems] = useState([]);
   const [price, setPrice] = useState(0);
-  const [numOfItemsInCart, setNumOfItemsInCart] = useState("");
+  const [numOfItemsInBag, setNumOfItemsInBag] = useState("");
   const [reload, setReload] = useState(0);
   return {
     price,
     setPrice,
-    numOfItemsInCart,
-    setNumOfItemsInCart,
-    setCartItems,
-    cartItems,
+    numOfItemsInBag,
+    setNumOfItemsInBag,
+    setBagItems,
+    bagItems,
     reload,
     setReload,
   };
@@ -23,21 +23,21 @@ const App = () => {
   const {
     reload,
     setReload,
-    setCartItems,
-    cartItems,
+    setBagItems,
+    bagItems,
     price,
     setPrice,
-    setNumOfItemsInCart,
-    numOfItemsInCart,
+    setNumOfItemsInBag,
+    numOfItemsInBag,
   } = useBetween(useSharableState);
   return (
     <div>
       <NavBar
-        setNumOfItemsInCart={setNumOfItemsInCart}
-        numOfItemsInCart={numOfItemsInCart}
+        setNumOfItemsInBag={setNumOfItemsInBag}
+        numOfItemsInBag={numOfItemsInBag}
         setPrice={setPrice}
         price={price}
-        cartItems={cartItems}
+        bagItems={bagItems}
       />
     </div>
   );
